@@ -1,0 +1,11 @@
+{
+  "name": "balkanrecyclingcenter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Balkan Recycling Center website",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && python3 -m http.server 8080 --directory dist"
+  }
+}
