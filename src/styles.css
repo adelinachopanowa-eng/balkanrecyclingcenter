@@ -982,3 +982,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 @media (max-width: 700px) {
   .site-photo.sites__map, .site-photo.location__map { min-height: 0; aspect-ratio: 16 / 10; }
 }
+
+.video-embed--vertical { flex: 0 1 300px; aspect-ratio: 9 / 16; }
+.equip-video--reverse { justify-content: space-between; }
+.equip-video--reverse .equip-video__text { flex: 1 1 320px; max-width: 560px; }
+@media (max-width: 700px) {
+  .video-embed--vertical { flex-basis: 100%; max-width: 340px; margin: 0 auto; }
+}
