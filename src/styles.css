@@ -493,9 +493,8 @@ a { color: inherit; }
   background: var(--hero-panel);
 }
 .capacity-card {
-  margin: -48px 24px 0 auto;
-  width: calc(100% - 48px);
-  max-width: 360px;
+  margin: 16px 0 0;
+  width: 100%;
   background: #FFFFFF;
   color: var(--text);
   border-radius: var(--radius-lg);
@@ -934,9 +933,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .site-photo figcaption { font-size: 14px; line-height: 20px; color: var(--text-muted); }
 
 
-.equip-card__media { position: relative; aspect-ratio: 4 / 3; background: var(--brand-ink); overflow: hidden; }
+.equip-card__media { position: relative; aspect-ratio: 1600 / 1113; background: var(--brand-ink); overflow: hidden; }
 .equip-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.equip-card__media.video-embed { flex: none; border-radius: 0; aspect-ratio: 4 / 3; }
+.equip-card__media.video-embed { flex: none; border-radius: 0; aspect-ratio: 1600 / 1113; }
 .equip-card__media iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .equip-card__body { display: flex; flex-direction: column; gap: 10px; padding: 22px 24px 24px; }
 .equip-card__body .equip-video__credit { margin-top: auto; }
