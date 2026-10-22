@@ -851,3 +851,38 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   outline: 2px solid var(--brand-green);
   outline-offset: 2px;
 }
+
+/* ---------- Equipment (home) ---------- */
+
+.equip-capacity { display: flex; flex-direction: column; gap: 4px; }
+.equip-capacity__value {
+  font-size: clamp(44px, 5vw, 64px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.equip-capacity__unit { font-size: 24px; font-weight: 600; color: var(--brand-mint); margin-left: 8px; letter-spacing: 0; }
+.equip-capacity__label { font-size: 15px; color: var(--text-on-dark-muted); }
+
+.equip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; }
+.equip-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: var(--hero-panel);
+  border-radius: var(--radius-lg);
+}
+.equip-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(95, 208, 162, 0.12);
+  color: var(--brand-mint);
+}
+.equip-card__title { margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; }
+.equip-card__text { margin: 0; font-size: 15px; line-height: 24px; color: var(--text-on-dark-muted); }
