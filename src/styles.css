@@ -865,12 +865,36 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .equip-capacity__unit { font-size: 24px; font-weight: 600; color: var(--brand-mint); margin-left: 8px; letter-spacing: 0; }
 .equip-capacity__label { font-size: 15px; color: var(--text-on-dark-muted); }
 
-.equip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; }
+.equip-layout { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; }
+.equip-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.equip-photo {
+  position: relative;
+  margin: 0;
+  min-height: 360px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--hero-panel);
+}
+.equip-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 80% center; }
+.equip-photo figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 20px 16px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: linear-gradient(to top, rgba(15, 23, 35, 0.85), rgba(15, 23, 35, 0));
+}
+@media (max-width: 900px) {
+  .equip-layout { grid-template-columns: 1fr; }
+  .equip-photo { min-height: 0; aspect-ratio: 16 / 11; }
+}
 .equip-card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 28px;
+  gap: 10px;
+  padding: 24px;
   background: var(--hero-panel);
   border-radius: var(--radius-lg);
 }
