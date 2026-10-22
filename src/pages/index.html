@@ -146,8 +146,34 @@
 <p class="equip-card__text">Механизирано разкомплектоване на излезли от употреба МПС с отделяне на пластмаси, черни и цветни метали, гуми, стъкла и други компоненти.</p>
 </article>
 </div>
+<div class="equip-video">
+<div class="video-embed" data-video-id="zHwP5pNHj9I" data-video-title="Dismantler Powerhand – разкомплектоване на автомобил">
+<img src="images/powerhand-video.jpg" width="1280" height="720" alt="Кадър от видео: Dismantler Powerhand разкомплектова автомобил" loading="lazy" decoding="async">
+<button type="button" class="video-embed__play" aria-label="Пусни видеото: Dismantler Powerhand – разкомплектоване на автомобил">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+</button>
+</div>
+<div class="equip-video__text">
+<div class="eyebrow">В ДЕЙСТВИЕ</div>
+<h3 class="equip-video__title">Как работи Dismantler Powerhand</h3>
+<p class="equip-video__desc">Машината разкомплектова автомобила механизирано и разделя пластмасите, черните и цветните метали, гумите и стъклата за отделна преработка.</p>
+<span class="equip-video__credit">Видео: Powerhand</span>
+</div>
+</div>
 </div>
 </section>
+<script>
+document.querySelectorAll('.video-embed').forEach(function (box) {
+  box.querySelector('.video-embed__play').addEventListener('click', function () {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.videoId + '?autoplay=1&rel=0';
+    iframe.title = box.dataset.videoTitle;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    box.replaceChildren(iframe);
+  });
+});
+</script>
 
 <section class="section section--subtle" id="process">
 <div class="container stack gap-48">
