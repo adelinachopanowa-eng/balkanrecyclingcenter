@@ -3,7 +3,7 @@
 //   <!-- page: {"title": "...", "active": "home"} -->
 // and is wrapped in src/layout.html with the shared header and footer.
 
-import { readFile, writeFile, readdir, mkdir, rm, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, rm, copyFile, cp } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -57,6 +57,7 @@ async function build() {
   }
 
   await copyFile(join(src, 'styles.css'), join(out, 'styles.css'));
+  await cp(join(src, 'images'), join(out, 'images'), { recursive: true });
   console.log(`Built ${pages.length} pages into dist/`);
 }
 
