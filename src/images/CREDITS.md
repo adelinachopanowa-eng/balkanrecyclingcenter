@@ -12,4 +12,4 @@ Stream photos in `streams/` are from Unsplash, free to use under the Unsplash Li
 | batteries.jpg | https://unsplash.com/photos/aAmUEXvX1bQ | John Cameron |
 | elv.jpg | https://unsplash.com/photos/W4-ID9V8JSY | Bruce McAllister / Documerica |
 | tyres.jpg | https://unsplash.com/photos/KEaZffWNhyM | Engin Akyurt |
-| metals.jpg | https://unsplash.com/photos/lp6CBQSr1Ek | Yasin Hemmati |
+| metals.jpg | https://unsplash.com/photos/WlHycHUQIvY | Karthik Srinivas |
