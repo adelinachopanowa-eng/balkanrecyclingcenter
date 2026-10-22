@@ -1007,3 +1007,102 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
     margin: -72px 0 0 -40px;
   }
 }
+
+/* ---------- Phones ---------- */
+@media (max-width: 640px) {
+  :root { --section-y: 48px; }
+  .gap-40 { gap: 28px; }
+  .gap-48 { gap: 32px; }
+
+  /* Type */
+  .h1 { font-size: 28px; line-height: 1.15; }
+  .h1--hero { font-size: 31px; line-height: 1.12; }
+  .h2 { font-size: 24px; line-height: 1.25; }
+  .lead { font-size: 16px; line-height: 25px; }
+  .body-lg { font-size: 16px; line-height: 25px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.12em; }
+
+  /* Hero */
+  .hero__inner { padding-top: 32px; padding-bottom: 40px; gap: 32px; }
+  .hero__copy { gap: 16px; }
+  .hero__copy .row-wrap { padding-top: 4px !important; }
+  .hero .btn, .cta-band__inner .btn, .page-hero .btn, .form__actions .btn, .package__form .btn { width: 100%; }
+  .capacity { margin: -32px 12px 0; padding: 16px; gap: 12px; }
+  .capacity__item { padding: 12px; }
+  .capacity__item dd { font-size: 22px; }
+  .capacity__item dt { font-size: 12px; line-height: 16px; }
+
+  /* Stats strip: two columns side by side */
+  .stats { grid-template-columns: 1fr 1fr; padding-top: 24px; padding-bottom: 24px; gap: 0; }
+  .stat { padding: 4px 16px; }
+  .stat__value { font-size: 30px; line-height: 34px; }
+  .stat__unit { font-size: 16px; margin-left: 4px; }
+  .stat__label { font-size: 13px; line-height: 18px; }
+
+  /* Home stream tiles: compact two-column grid */
+  .stream-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stream-tile__body { padding: 12px 12px 14px; gap: 2px; }
+  .stream-tile__name { font-size: 14px; line-height: 19px; }
+  .stream-tile__cap { font-size: 12px; line-height: 16px; }
+  .stream-tile--ask { padding: 14px; }
+  .stream-tile--ask .stream-tile__name { font-size: 15px; line-height: 20px; }
+  .stream-tile--ask .link-arrow { font-size: 14px; }
+
+  /* Cards and paddings */
+  .audience-card, .doc-card, .why-card, .card--pad { padding: 20px; }
+  .audience-card h3 { font-size: 21px; line-height: 28px; }
+  .equip-capacity__value { font-size: 44px; }
+  .equip-card__body { padding: 18px 20px 20px; }
+  .process { gap: 20px; }
+  .process__title { font-size: 18px; }
+  .process__text, .benefit__text { font-size: 15px; line-height: 23px; }
+  .cta-band__inner { padding-top: 40px; padding-bottom: 40px; }
+
+  /* OO table becomes stacked rows */
+  .table-wrap { overflow: visible; }
+  .table { min-width: 0; }
+  .table thead { display: none; }
+  .table, .table tbody { display: block; }
+  .table tr {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .table tr:last-child { border-bottom: 0; }
+  .table td { padding: 0; border: 0; }
+  .table td:first-child { grid-column: 1; grid-row: 1; }
+  .table td:nth-child(2) { grid-column: 1; grid-row: 2; font-size: 13px; }
+  .table td.num { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-weight: 600; }
+
+  /* Streams page */
+  .chips { margin: 0 calc(var(--gutter) * -1); padding: 12px var(--gutter) 4px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .stream__media { min-height: 0; aspect-ratio: 16 / 10; flex-basis: 100%; }
+  .stream__body { padding: 20px; gap: 14px; }
+  .stream__body h2 { font-size: 21px; line-height: 28px; }
+  .stream__accept { font-size: 15px; line-height: 22px; }
+  .chain { flex-direction: column; align-items: stretch; gap: 0; }
+  .chain li { flex-direction: column; align-items: flex-start; gap: 0; }
+  .chain li > span { width: 100%; }
+  .chain li:not(:last-child)::after { transform: rotate(90deg); margin: 4px 0 4px 14px; }
+  .equipment { padding-top: 24px; padding-bottom: 24px; }
+
+  /* Larger tap targets for text links */
+  .link-arrow, .capacity__link { display: inline-flex; align-items: center; min-height: 44px; }
+  .site-footer__col a { display: inline-flex; align-items: center; min-height: 40px; }
+  .site-footer__col { gap: 2px; }
+  .site-footer__title { margin-bottom: 6px; }
+  .site-footer__inner { padding-top: 48px; gap: 32px; }
+  .site-footer__cols { gap: 28px; }
+  .site-footer__bottom a { display: inline-flex; align-items: center; min-height: 40px; }
+  .breadcrumb a { display: inline-block; padding: 8px 0; }
+  .faq details { padding: 16px 18px; }
+  .faq summary { font-size: 16px; line-height: 24px; }
+
+  /* Forms */
+  .contact-form, .contact-band__form { padding: 20px; gap: 16px; }
+  .choice { width: 100%; }
+  .responder { width: 100%; }
+}
