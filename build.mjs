@@ -16,8 +16,7 @@ const NAV = [
   ['producers', 'За вносители', 'producers.html'],
   ['streams', 'Потоци и капацитет', 'streams.html'],
   ['process', 'Как работим', 'index.html#process'],
-  ['trust', 'Доверие и документи', 'trust.html'],
-  ['about', 'За нас', 'index.html#why'],
+  ['trust', 'За нас', 'trust.html'],
 ];
 
 const read = (p) => readFile(join(src, p), 'utf8');
